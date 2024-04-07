@@ -1,0 +1,70 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "price": "45",
+      "name": "Audi A1 S Line",
+      "Brand": "Audi",
+      "Year": "2012",
+      "Doors": "4/5",
+      "Transmission": "Manual",
+      "Fuel": "Gasoline",
+      "image": "./audi.jpg"
+    },
+    {
+      "id": "2",
+      "price": "37",
+      "name": "VW Golf 6",
+      "Brand": "Volkswagen",
+      "Year": "2008",
+      "Doors": "4/5",
+      "Transmission": "Manual",
+      "Fuel": "Diesel",
+      "image": "../assets/golf.jpg"
+    },
+    {
+      "id": "3",
+      "price": "30",
+      "name": "Toyota Camry",
+      "Brand": "Toyota",
+      "Year": "2006",
+      "Doors": "4/5",
+      "Transmission": "Automatic",
+      "Fuel": "Hybrid",
+      "image": "../assets/toyota.jpg"
+    },
+    {
+      "id": "4",
+      "price": "35",
+      "name": "BMW 320 Borderline",
+      "Brand": "BMW",
+      "Year": "2012",
+      "Doors": "4/5",
+      "Transmission": "Manual",
+      "Fuel": "Diesel",
+      "image": "../assets/bmw.jpg"
+    },
+    {
+      "id": "5",
+      "price": "70",
+      "name": "Mercedez-Benz GLK",
+      "Brand": "Mercedes",
+      "Year": "2006",
+      "Doors": "4/5",
+      "Transmission": "Manual",
+      "Fuel": "Diesel",
+      "image": "../assets/benz.jpg"
+    },
+    {
+      "id": "6",
+      "price": "25",
+      "name": "VW Pasat CC",
+      "Brand": "Volkswagen",
+      "Year": "2008",
+      "Doors": "4/5",
+      "Transmission": "Automatic",
+      "Fuel": "Gasoline",
+      "image": "../assets/passat.jpg"
+    }
+  ]
+}
