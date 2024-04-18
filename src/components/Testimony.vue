@@ -11,11 +11,11 @@
           with you.
         </p>
       </div>
-      <div class="flex flex-wrap justify-center mt-8">
+      <div class="flex lg:flex-row flex-col lg:flex-wrap mt-8 px-6">
         <div
           v-for="testimony in testimonies"
           :key="testimony.name"
-          class="w-1/2 mb-4 text-left flex"
+          class="w-full lg:w-1/2 mb-4 text-left flex"
         >
           <div class="flex-1">
             <div

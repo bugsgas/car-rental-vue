@@ -1,13 +1,13 @@
 <template>
   <Breadcrumb :breadcrumbItems="breadcrumbItems" />
   <div class="py-16">
-    <div class="container mx-auto flex justify-center items-center">
+    <div class="flex lg:flex-row flex-col justify-between mx-20">
       <div class="">
         <img class="" src="../assets/photo1.jpg" alt="" />
       </div>
-      <div class="text-left px-10 w-1/2">
-        <p class="text-2xl font-bold">About Company</p>
-        <h3 class="py-5 text-6xl font-black">
+      <div class="text-left w-full lg:w-1/2 items-start">
+        <p class="lg:text-2xl text-lg font-bold">About Company</p>
+        <h3 class="lg:py-5 py-2 lg:text-6xl text-4xl font-black">
           You start the engine and your adventure begins
         </h3>
         <p class="">

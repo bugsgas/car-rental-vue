@@ -1,6 +1,6 @@
 <template>
-  <div class="flex container mx-auto about">
-    <div class="content w-1/2 px-5 text-left">
+  <div class="flex flex-col lg:flex-row container mx-auto about">
+    <div class="content lg:w-1/2 w-full px-5 text-left">
       <h3 class="text-6xl font-black">Need additional information?</h3>
       <p class="text-2xl py-4">
         A multifaceted professional skilled in multiple fields of research,
@@ -8,7 +8,7 @@
         experience.
       </p>
     </div>
-    <div class="flex flex-col w-1/2 px-5 text-left">
+    <div class="flex flex-col lg:w-1/2 w-full px-5 text-left">
       <label class="font-bold py-1"
         >Email <span class="text-green-600">*</span></label
       >

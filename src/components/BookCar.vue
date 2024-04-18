@@ -1,8 +1,10 @@
 <template>
   <div class="text-left bg-gray-800 rounded mt-20 mx-10 shadow-2xl">
-    <div class="container py-20 lg:mx-auto justify-between items-center">
-      <h3 class="text-green-600 font-black text-xl mb-4">Book a Car</h3>
-      <div class="max-w-screen-xl w-full flex justify-center">
+    <div class="container p-10 lg:mx-auto justify-between items-center w-auto">
+      <h3 class="text-white font-black text-4xl mb-4 lg:text-left text-center">
+        Book a Car
+      </h3>
+      <div class="max-w-screen-xl w-full md:flex md:justify-center">
         <!-- Car Selection -->
         <div :class="columnClass">
           <label class="text-white" for="cars">Select Your Car Type</label>
@@ -51,7 +53,9 @@
         </div>
       </div>
 
-      <div class="max-w-screen-xl w-full flex justify-center items-end mt-4">
+      <div
+        class="max-w-screen-xl w-full md:flex md:justify-center items-end lg:mt-4"
+      >
         <!-- Pick-up Date -->
         <div :class="columnClass">
           <label class="text-white" for="pickupDate">Pick-up Date</label>
@@ -74,12 +78,7 @@
         </div>
         <!-- Submit Button -->
         <div :class="columnClass">
-          <button
-            @click="submitForm"
-            class="bg-green-600 hover:text-green text-white font-bold py-2 px-4 h-full"
-          >
-            Submit
-          </button>
+          <Button :click="submitForm" class="mt-2 lg:mt-0"> Submit</Button>
         </div>
       </div>
       <!-- Error Message -->
@@ -121,11 +120,12 @@
 import VueDatePicker from "@vuepic/vue-datepicker";
 import "@vuepic/vue-datepicker/dist/main.css";
 import Modal from "./Modal.vue";
+import Button from "./Button.vue";
 import { cars } from "../composables/cars";
 
 export default {
   name: "Book Car",
-  components: { VueDatePicker, Modal },
+  components: { VueDatePicker, Modal, Button },
   data() {
     return {
       pickupDate: null,
@@ -147,7 +147,7 @@ export default {
   },
   computed: {
     columnClass() {
-      return "flex flex-col flex-1 mx-2";
+      return "flex flex-col flex-1 mx-2 my-2 lg:my-0";
     },
   },
   methods: {

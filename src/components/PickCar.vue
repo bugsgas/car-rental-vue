@@ -1,7 +1,10 @@
 <template>
-  <div :id="car.id" class="flex justify-between items-center">
+  <div
+    :id="car.id"
+    class="flex lg:flex-row flex-col justify-between items-center px-2"
+  >
     <!-- Button on the left -->
-    <div class="button flex flex-col mr-4">
+    <div class="flex flex-col">
       <button
         v-for="car in carData.cars"
         :key="car.id"
@@ -18,12 +21,12 @@
     </div>
 
     <!-- Image -->
-    <div class="space-x-4">
+    <div class="space-x-4 px-10 lg:py-0 py-10">
       <img :src="car.image" alt="Car Image" />
     </div>
 
     <!-- Car details table on the right -->
-    <div class="table-container space-x-4">
+    <div class="table-container">
       <table class="table-fixed border h-full">
         <thead>
           <tr>
@@ -32,7 +35,7 @@
             </th>
           </tr>
         </thead>
-        <tbody class="h-full">
+        <body class="h-full">
           <template v-for="(value, key) in car">
             <template
               v-if="['id', 'price', 'name', 'image'].indexOf(key) === -1"
@@ -45,7 +48,7 @@
               </tr>
             </template>
           </template>
-        </tbody>
+        </body>
       </table>
     </div>
   </div>

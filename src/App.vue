@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="py-1">
+    <nav class="">
       <Navbar />
     </nav>
     <div class="">
@@ -27,10 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
 }
 
 nav a {

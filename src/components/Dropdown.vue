@@ -1,10 +1,10 @@
 <template>
-  <nav
+  <div
     class="bg-gray-900 text-gray-100 py-3.5 px-6 shadow md:flex justify-between item-center"
   >
     <div class="flex items-center cursor-pointer">
       <span class="text-green-500 text-xl mr-1">
-        <router-link to="/" exact>
+        <router-link to="/">
           <div class="logo-container">
             <img src="../assets/logo.png" alt="" />
           </div>
@@ -28,13 +28,9 @@
         v-for="link in Links"
         :key="link.name"
       >
-        <router-link
-          :to="link.link"
-          class="text-xl text-white hover:text-green-500"
-          :exact-active-class="'router-link-exact-active'"
-        >
-          {{ link.name }}
-        </router-link>
+        <a :href="link.link" class="text-xl text-white hover:text-green-500">{{
+          link.name
+        }}</a>
       </li>
       <li class="md:mx-4 md:my-0 my-6 text-left">
         <Button class="md:w-auto w-full" :goTo="Login">Sign In</Button>
@@ -43,7 +39,7 @@
         <Button class="md:w-auto w-full" :goTo="Register">Register</Button>
       </li>
     </ul>
-  </nav>
+  </div>
 </template>
 
 <script>
@@ -60,9 +56,6 @@ export default {
     },
     Login() {
       this.$router.push("/login");
-    },
-    MenuOpen() {
-      this.open = !this.open;
     },
   },
   setup() {
@@ -90,9 +83,5 @@ export default {
 <style>
 .logo-container {
   width: 20%; /* Adjust the width as needed */
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
